@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn231016204009"></A><B><U><big>pn231016204009</big></U></B>
+#Start recording tcl command: 10/13/2023 15:22:15
+#Project Location: Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07; Project name: Lab07
+prj_create -name "Lab07" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+file copy -force -- "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/HMC-E155/lab/lab07/lab07_fpga/src/aes_core_tb.sv" "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/HMC-E155/lab/lab07/lab07_fpga/src/aes_sbox_tb.sv" "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/HMC-E155/lab/lab07/lab07_fpga/src/aes_spi_tb.sv" "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/HMC-E155/lab/lab07/lab07_fpga/src/aes_starter.sv" "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1"
+prj_add_source "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_core_tb.sv" "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_sbox_tb.sv" "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_spi_tb.sv" "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_starter.sv"
+prj_save 
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 10/16/2023 20:40:09
+
+
+
+<A name="pn231026131634"></A><B><U><big>pn231026131634</big></U></B>
+#Start recording tcl command: 10/22/2023 10:30:00
+#Project Location: Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07; Project name: Lab07
+prj_open "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/Lab07.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 10/26/2023 13:16:34
+
+
+
+<A name="pn231028175358"></A><B><U><big>pn231028175358</big></U></B>
+#Start recording tcl command: 10/26/2023 13:17:00
+#Project Location: Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07; Project name: Lab07
+prj_open "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/Lab07.rdf"
+#Stop recording: 10/28/2023 17:53:58
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn231016204009>pn231016204009</A></LI>
+<LI><A href=#pn231026131634>pn231026131634</A></LI>
+<LI><A href=#pn231028175358>pn231028175358</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

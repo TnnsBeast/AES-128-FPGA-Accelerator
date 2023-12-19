@@ -1,0 +1,16 @@
+#Start recording tcl command: 10/22/2023 10:30:00
+#Project Location: Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07; Project name: Lab07
+prj_open "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/Lab07.rdf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 10/26/2023 13:16:34

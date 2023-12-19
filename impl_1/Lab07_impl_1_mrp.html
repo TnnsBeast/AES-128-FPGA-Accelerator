@@ -1,0 +1,536 @@
+<HTML>
+<HEAD>
+<TITLE>Map Report</TITLE>
+<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2023.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Mrp"></A>                         Lattice Mapping Report File
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
+Mapped on: Wed Oct 25 08:59:59 2023
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -i Lab07_impl_1_syn.udb -o Lab07_impl_1_map.udb -mp
+     Lab07_impl_1.mrp -hierrpt -gui
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of slice registers: 1337 out of  5280 (25%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           2443 out of  5280 (46%)
+      Number of logic LUT4s:             1498
+      Number of inserted feedthru LUT4s: 930
+      Number of replicated LUT4s:          1
+      Number of ripple logic:              7 (14 LUT4s)
+   Number of IO sites used:   6 out of 39 (15%)
+      Number of IO sites used for general PIO: 6
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 6 out of 36 (17%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 6 out of 39 (15%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             20 out of 30 (66%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  2
+      Net clk_c: 968 loads, 968 rising, 0 falling (Driver: Port clk)
+      Net sck_c: 385 loads, 383 rising, 2 falling (Driver: Port sck)
+   Number of Clock Enables:  13
+      Net VCC_net: 60 loads, 0 SLICEs
+      Net core.curPlaintext_0__N_511: 256 loads, 256 SLICEs
+      Net core.aes_big_boi.oldw_3__0__N_1165: 128 loads, 128 SLICEs
+      Net core.aes_big_boi.cyphertext_0__N_128: 128 loads, 128 SLICEs
+      Net core.aes_big_boi.state_0__N_1202: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.w_0__0__N_845: 32 loads, 32 SLICEs
+      Net core.aes_big_boi.w_1__0__N_909: 31 loads, 31 SLICEs
+      Net core.aes_big_boi.w_1__17__N_875: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.w_2__0__N_973: 32 loads, 32 SLICEs
+      Net core.aes_big_boi.w_3__0__N_1037: 32 loads, 32 SLICEs
+
+      Net core.aes_big_boi.round_0__N_780: 4 loads, 4 SLICEs
+      Net core.aes_big_boi.counter_0__N_1200: 7 loads, 7 SLICEs
+      Net core.aes_big_boi.fsm_done_N_1217: 1 loads, 1 SLICEs
+   Number of LSRs:  133
+      Net state[1]: 1 loads, 1 SLICEs
+      Net core.state_1__N_512: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_0__N_769: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_85__N_599: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_4__N_761: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_114__N_541: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_5__N_759: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_86__N_597: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_115__N_539: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_127__N_515: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_126__N_517: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_125__N_519: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_124__N_521: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_123__N_523: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_122__N_525: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_121__N_527: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_120__N_529: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_119__N_531: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_118__N_533: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_117__N_535: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_116__N_537: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_113__N_543: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_112__N_545: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_111__N_547: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_110__N_549: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_109__N_551: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_108__N_553: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_107__N_555: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_106__N_557: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_105__N_559: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_104__N_561: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_103__N_563: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_102__N_565: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_101__N_567: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_100__N_569: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_99__N_571: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_98__N_573: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_97__N_575: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_96__N_577: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_95__N_579: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_94__N_581: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_93__N_583: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_92__N_585: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_91__N_587: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_90__N_589: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_89__N_591: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_88__N_593: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_87__N_595: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_84__N_601: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_83__N_603: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_82__N_605: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_81__N_607: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_80__N_609: 1 loads, 1 SLICEs
+
+      Net core.aes_big_boi.ciphertext_79__N_611: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_78__N_613: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_77__N_615: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_76__N_617: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_75__N_619: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_74__N_621: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_73__N_623: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_72__N_625: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_71__N_627: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_70__N_629: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_69__N_631: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_68__N_633: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_67__N_635: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_66__N_637: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_65__N_639: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_64__N_641: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_63__N_643: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_62__N_645: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_61__N_647: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_60__N_649: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_59__N_651: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_58__N_653: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_57__N_655: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_56__N_657: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_55__N_659: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_54__N_661: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_53__N_663: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_52__N_665: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_51__N_667: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_50__N_669: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_49__N_671: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_48__N_673: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_47__N_675: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_46__N_677: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_45__N_679: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_44__N_681: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_43__N_683: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_42__N_685: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_41__N_687: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_40__N_689: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_39__N_691: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_38__N_693: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_37__N_695: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_36__N_697: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_35__N_699: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_34__N_701: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_33__N_703: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_32__N_705: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_31__N_707: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_30__N_709: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_29__N_711: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_28__N_713: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_27__N_715: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_26__N_717: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_25__N_719: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_24__N_721: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_23__N_723: 1 loads, 1 SLICEs
+
+      Net core.aes_big_boi.ciphertext_22__N_725: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_21__N_727: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_20__N_729: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_19__N_731: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_18__N_733: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_17__N_735: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_16__N_737: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_15__N_739: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_14__N_741: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_13__N_743: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_12__N_745: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_11__N_747: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_10__N_749: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_9__N_751: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_8__N_753: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_7__N_755: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_6__N_757: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_3__N_763: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_2__N_765: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.ciphertext_1__N_767: 1 loads, 1 SLICEs
+      Net core.aes_big_boi.round_0__N_781: 4 loads, 4 SLICEs
+      Net core.aes_big_boi.counter_0__N_1201: 7 loads, 7 SLICEs
+      Net core.aes_big_boi.fsm_done_N_1218: 1 loads, 1 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net core.curPlaintext_0__N_511: 256 loads
+      Net core.aes_big_boi.state[3]: 255 loads
+      Net core.aes_big_boi.state[0]: 224 loads
+      Net core.aes_big_boi.state[1]: 196 loads
+      Net core.aes_big_boi.state[2]: 195 loads
+      Net core.aes_big_boi.n3066: 165 loads
+      Net core.aes_big_boi.state[4]: 153 loads
+      Net core.aes_big_boi.cyphertext_0__N_128: 128 loads
+      Net core.aes_big_boi.n6045: 128 loads
+      Net core.aes_big_boi.oldw_3__0__N_1165: 128 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| load                | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sdi                 | INPUT     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+| sck                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| done                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| sdo                 | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i10_1_lut was optimized away.
+Block i1 was optimized away.
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: core/aes_big_boi/sub/s3/w_3__0__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sub/s2/w_3__8__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sub/s1/w_3__16__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sub/s0/w_3__24__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s9/ciphertext_72__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s8/ciphertext_64__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s7/ciphertext_56__I_0_3
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s6/ciphertext_48__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s5/ciphertext_40__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s4/ciphertext_32__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s3/ciphertext_24__I_0_3
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s2/ciphertext_16__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s1/ciphertext_8__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s15/ciphertext_120__I_0_3
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s14/ciphertext_112__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s13/ciphertext_104__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s12/ciphertext_96__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s11/ciphertext_88__I_0_3
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s10/ciphertext_80__I_0
+         Type: EBR
+Instance Name: core/aes_big_boi/sb/s0/ciphertext_0__I_0
+
+         Type: EBR
+Instance Name: spi/sdi_c_I_0
+         Type: IOLOGIC
+
+
+
+<A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
+------------------
+
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 2 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 113 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#mrp_di>Design Information</A></LI>
+<LI><A href=#mrp_ds>Design Summary</A></LI>
+<LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
+<LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
+<LI><A href=#mrp_asic>ASIC Components</A></LI>
+<LI><A href=#mrp_consum>Constraint Summary</A></LI>
+<LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

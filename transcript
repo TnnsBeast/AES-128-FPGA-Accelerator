@@ -1,0 +1,74 @@
+# Reading pref.tcl
+vsim -gui work.testbench_aes_core -L iCE40UP
+# vsim -gui work.testbench_aes_core -L iCE40UP 
+# Start time: 13:18:07 on Oct 26,2023
+# //  ModelSim - Lattice FPGA Edition 2021.4 Oct 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.testbench_aes_core
+# Loading work.aes_core
+# Loading work.FSM
+# Loading work.rotword
+# Loading work.subword
+# Loading work.sbox_sync
+# Loading work.addroundkey
+# Loading work.subbytes
+# Loading work.shiftrows
+# Loading work.mixcolumns
+# Loading work.mixcolumn
+# Loading work.galoismult
+add wave -position insertpoint  \
+sim:/testbench_aes_core/plaintext \
+sim:/testbench_aes_core/load \
+sim:/testbench_aes_core/key \
+sim:/testbench_aes_core/expected \
+sim:/testbench_aes_core/done \
+sim:/testbench_aes_core/cyphertext \
+sim:/testbench_aes_core/clk
+run 1 sec
+# Testbench ran successfully
+# ** Note: $stop    : Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_core_tb.sv(48)
+#    Time: 219650 ns  Iteration: 1  Instance: /testbench_aes_core
+# Break in Module testbench_aes_core at Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_core_tb.sv line 48
+# couldn't load library "C:/lscc/radiant/2023.1/modeltech/win32loem/ScintillaTk/ScintillaTk114.dll": this library or a dependent library could not be found in library path
+# list element in quotes followed by ":" instead of space
+vsim -gui work.testbench_aes_spi -L iCE40UP
+# End time: 14:41:23 on Oct 26,2023, Elapsed time: 1:23:16
+# Errors: 0, Warnings: 0
+# vsim -gui work.testbench_aes_spi -L iCE40UP 
+# Start time: 14:41:23 on Oct 26,2023
+# Loading sv_std.std
+# Loading work.testbench_aes_spi
+# Loading work.aes
+# Loading work.aes_spi
+# Loading work.aes_core
+# Loading work.FSM
+# Loading work.rotword
+# Loading work.subword
+# Loading work.sbox_sync
+# Loading work.addroundkey
+# Loading work.subbytes
+# Loading work.shiftrows
+# Loading work.mixcolumns
+# Loading work.mixcolumn
+# Loading work.galoismult
+run 1 sec
+# Testbench ran successfully
+# ** Note: $stop    : Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_spi_tb.sv(75)
+#    Time: 233450 ns  Iteration: 1  Instance: /testbench_aes_spi
+# Break in Module testbench_aes_spi at Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_spi_tb.sv line 75
+# couldn't load library "C:/lscc/radiant/2023.1/modeltech/win32loem/ScintillaTk/ScintillaTk114.dll": this library or a dependent library could not be found in library path
+# list element in quotes followed by ":" instead of space
+# End time: 17:53:53 on Oct 28,2023, Elapsed time: 51:12:30
+# Errors: 0, Warnings: 0

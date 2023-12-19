@@ -1,0 +1,262 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	       2443        100.0
+                               LUTGATE	       2429        100.0
+                                LUTCCU	         14        100.0
+                                 IOREG	          1        100.0
+                                 IOBUF	          6        100.0
+                                PFUREG	       1337        100.0
+                                   EBR	         20        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                              aes_core	          1        54.4
+                               aes_spi	          1         5.2
+---------------------------------------------------
+Report for cell aes_core
+   Instance path: top/core
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1330        54.4
+                               LUTGATE	       1316        54.2
+                                LUTCCU	         14        100.0
+                                PFUREG	        953        71.3
+                                   EBR	         20        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                   FSM	          1        54.3
+---------------------------------------------------
+Report for cell FSM
+   Instance path: top/core/aes_big_boi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1327        54.3
+                               LUTGATE	       1313        54.1
+                                LUTCCU	         14        100.0
+                                PFUREG	        694        51.9
+                                   EBR	         20        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           addroundkey	          1         3.9
+                            mixcolumns	          1         4.3
+                              subbytes	          1         0.0
+                               subword	          1         0.0
+---------------------------------------------------
+Report for cell subword
+   Instance path: top/core/aes_big_boi/sub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         32         2.4
+                                   EBR	          4        20.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             sbox_sync	          1         0.0
+                          sbox_sync_U0	          1         0.0
+                          sbox_sync_U1	          1         0.0
+                          sbox_sync_U2	          1         0.0
+---------------------------------------------------
+Report for cell sbox_sync
+   Instance path: top/core/aes_big_boi/sub/s3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U0
+   Instance path: top/core/aes_big_boi/sub/s2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U1
+   Instance path: top/core/aes_big_boi/sub/s1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U2
+   Instance path: top/core/aes_big_boi/sub/s0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell subbytes
+   Instance path: top/core/aes_big_boi/sb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	        128         9.6
+                                   EBR	         16        80.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         sbox_sync_U10	          1         0.0
+                         sbox_sync_U11	          1         0.0
+                         sbox_sync_U12	          1         0.0
+                         sbox_sync_U13	          1         0.0
+                         sbox_sync_U14	          1         0.0
+                         sbox_sync_U15	          1         0.0
+                         sbox_sync_U16	          1         0.0
+                         sbox_sync_U17	          1         0.0
+                         sbox_sync_U18	          1         0.0
+                          sbox_sync_U3	          1         0.0
+                          sbox_sync_U4	          1         0.0
+                          sbox_sync_U5	          1         0.0
+                          sbox_sync_U6	          1         0.0
+                          sbox_sync_U7	          1         0.0
+                          sbox_sync_U8	          1         0.0
+                          sbox_sync_U9	          1         0.0
+---------------------------------------------------
+Report for cell sbox_sync_U3
+   Instance path: top/core/aes_big_boi/sb/s9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U4
+   Instance path: top/core/aes_big_boi/sb/s8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U5
+   Instance path: top/core/aes_big_boi/sb/s7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U6
+   Instance path: top/core/aes_big_boi/sb/s6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U7
+   Instance path: top/core/aes_big_boi/sb/s5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U8
+   Instance path: top/core/aes_big_boi/sb/s4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U9
+   Instance path: top/core/aes_big_boi/sb/s3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U10
+   Instance path: top/core/aes_big_boi/sb/s2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U11
+   Instance path: top/core/aes_big_boi/sb/s1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U12
+   Instance path: top/core/aes_big_boi/sb/s15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U13
+   Instance path: top/core/aes_big_boi/sb/s14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U14
+   Instance path: top/core/aes_big_boi/sb/s13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U15
+   Instance path: top/core/aes_big_boi/sb/s12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U16
+   Instance path: top/core/aes_big_boi/sb/s11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U17
+   Instance path: top/core/aes_big_boi/sb/s10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell sbox_sync_U18
+   Instance path: top/core/aes_big_boi/sb/s0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         5.0
+---------------------------------------------------
+Report for cell mixcolumns
+   Instance path: top/core/aes_big_boi/mc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        104         4.3
+                               LUTGATE	        104         4.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             mixcolumn	          1         1.0
+                         mixcolumn_U19	          1         1.1
+                         mixcolumn_U20	          1         1.0
+                         mixcolumn_U21	          1         1.1
+---------------------------------------------------
+Report for cell mixcolumn
+   Instance path: top/core/aes_big_boi/mc/mc3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         1.0
+                               LUTGATE	         24         1.0
+---------------------------------------------------
+Report for cell mixcolumn_U19
+   Instance path: top/core/aes_big_boi/mc/mc2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         1.1
+                               LUTGATE	         27         1.1
+---------------------------------------------------
+Report for cell mixcolumn_U20
+   Instance path: top/core/aes_big_boi/mc/mc1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         25         1.0
+                               LUTGATE	         25         1.0
+---------------------------------------------------
+Report for cell mixcolumn_U21
+   Instance path: top/core/aes_big_boi/mc/mc0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         1.1
+                               LUTGATE	         28         1.2
+---------------------------------------------------
+Report for cell addroundkey
+   Instance path: top/core/aes_big_boi/ark
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         96         3.9
+                               LUTGATE	         96         4.0
+---------------------------------------------------
+Report for cell aes_spi
+   Instance path: top/spi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	        128         5.2
+                               LUTGATE	        128         5.3
+                                 IOREG	          1        100.0
+                                PFUREG	        384        28.7

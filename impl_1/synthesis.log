@@ -1,0 +1,231 @@
+synthesis:  version Radiant Software (64-bit) 2023.1.0.43.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Oct 25 08:59:41 2023
+
+
+Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f Lab07_impl_1_lattice.synproj -gui -msgset Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/promote.xml 
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = Lab07_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
+-path Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07 (searchpath added)
+-path Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/impl_1 (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_core_tb.sv
+Verilog design file = Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_sbox_tb.sv
+Verilog design file = Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_spi_tb.sv
+Verilog design file = Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/aes_starter.sv
+Verilog design file = Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/source/impl_1/top.sv
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_core_tb.sv. VERI-1482
+Analyzing Verilog file y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_sbox_tb.sv. VERI-1482
+Analyzing Verilog file y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_spi_tb.sv. VERI-1482
+Analyzing Verilog file y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv. VERI-1482
+Analyzing Verilog file y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/top.sv. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+INFO <35921504> - synthesis: The default VHDL library search path is now "Y:/Documents/Polarbear/College/Classes/Engineering/MicroPs/Lab07/impl_1". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): top
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/top.sv(1): compiling module top. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(26): compiling module aes_spi. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(75): compiling module aes_core. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(375): compiling module FSM. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(335): compiling module rotword. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(349): compiling module subword. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(143): compiling module sbox_sync. VERI-1018
+WARNING <35931002> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(150): net sbox does not have a driver. VDB-1002
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(314): compiling module addroundkey. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(254): compiling module subbytes. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(219): compiling module shiftrows. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(167): compiling module mixcolumns. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(183): compiling module mixcolumn. VERI-1018
+INFO <35901018> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(210): compiling module galoismult. VERI-1018
+WARNING <35901209> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(466): expression size 32 truncated to fit in target size 12. VERI-1209
+WARNING <35901209> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(478): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING <35931002> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(388): net rcon does not have a driver. VDB-1002
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+WARNING <35931038> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(388): ram rcon_original_ramnet has no write-port on it. VDB-1038
+WARNING <35931038> - synthesis: y:/documents/polarbear/college/classes/engineering/microps/lab07/source/impl_1/aes_starter.sv(150): ram sbox_original_ramnet has no write-port on it. VDB-1038
+
+
+
+CRITICAL <35001747> - synthesis: Bit 2 of Register \core/state_ is stuck at Zero
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+################### Begin Area Report (top)######################
+Number of register bits => 1337 of 5280 (25 % )
+EBR_B => 20
+CCU2 => 7
+FD1P3XZ => 1337
+IB => 4
+INV => 1
+IOL_B => 1
+LUT4 => 1498
+OB => 2
+################### End Area Report ##################
+Number of odd-length carry chains : 0
+Number of even-length carry chains : 1
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : sck_c, loads : 0
+  Net : clk_c, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : core/curPlaintext_0__N_511, loads : 256
+  Net : core/aes_big_boi/state[3], loads : 254
+  Net : core/aes_big_boi/n3066, loads : 197
+  Net : core/aes_big_boi/state[1], loads : 195
+  Net : core/aes_big_boi/state[0], loads : 192
+  Net : core/aes_big_boi/state[2], loads : 163
+  Net : core/aes_big_boi/state[4], loads : 153
+  Net : core/aes_big_boi/oldw_3__0__N_1165, loads : 128
+  Net : core/aes_big_boi/cyphertext_0__N_128, loads : 128
+  Net : core/aes_big_boi/n6045, loads : 128
+################### End Clock Report ##################
+
+Peak Memory Usage: 140 MB
+
+--------------------------------------------------------------
+Total CPU Time: 13 secs 
+Total REAL Time: 16 secs 
+--------------------------------------------------------------
